@@ -26,6 +26,7 @@ android {
 dependencies {
     implementation(project (":domain"))
     implementation(project (":networking"))
+    implementation(libs.bolts.tasks)
 
     implementation(libs.koin)
 }

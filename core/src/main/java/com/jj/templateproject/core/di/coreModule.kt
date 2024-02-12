@@ -1,5 +1,6 @@
 package com.jj.templateproject.core.di
 
+import com.jj.templateproject.core.data.back4app.InitializeBack4App
 import com.jj.templateproject.core.data.google.GetGoogleDataUseCase
 import com.jj.templateproject.core.data.google.GetGoogleStatusUseCase
 import com.jj.templateproject.core.data.notifications.AndroidNotificationManager
@@ -11,4 +12,5 @@ val coreModule = module {
     single { GetGoogleStatusUseCase(templateRepository = get()) }
     single { GetGoogleDataUseCase(templateRepository = get()) }
     single<NotificationManager> { AndroidNotificationManager(context = androidContext()) }
+    single<InitializeBack4App> { InitializeBack4App(applicationContext = androidContext()) }
 }
