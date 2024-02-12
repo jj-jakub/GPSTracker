@@ -1,9 +1,3 @@
-repositories {
-    google()
-    mavenCentral()
-    gradlePluginPortal()
-}
-
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
