@@ -13,7 +13,7 @@ class InitializeBack4App(
         Parse.initialize(
             Parse.Configuration.Builder(applicationContext)
                 .applicationId(applicationContext.getString(R.string.back4app_app_id))
-                .clientKey(applicationContext.getString(R.string.back4app_client_key))
+                .clientKey(applicationContext.getString(R.string.back4app_client_key)) // TODO move to BuildConfig files
                 .server(applicationContext.getString(R.string.back4app_server_url))
                 .build()
         )
