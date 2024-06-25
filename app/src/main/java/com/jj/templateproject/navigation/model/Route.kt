@@ -9,12 +9,12 @@ sealed class Route(
     val route: String,
     val path: String,
 ) {
-    object MainScreen : Route(
+    data object MainScreen : Route(
         route = "main_screen",
         path = "main_screen",
     )
 
-    object SecondaryScreen : Route(
+    data object SecondaryScreen : Route(
         route = "secondary_screen" +
                 "/{${SecondaryScreenArgument.Text.name}}" +
                 "?${SecondaryScreenArgument.TextOptionalSecondary.name}={${SecondaryScreenArgument.TextOptionalSecondary.name}}" +
@@ -25,9 +25,9 @@ sealed class Route(
 
 sealed class Argument(val name: String) {
     sealed class SecondaryScreenArgument(argName: String) : Argument(name = argName) {
-        object Text : SecondaryScreenArgument("text")
-        object TextOptionalSecondary : SecondaryScreenArgument("textSecondary")
-        object TextOptionalTertiary : SecondaryScreenArgument("textTertiary")
+        data object Text : SecondaryScreenArgument("text")
+        data object TextOptionalSecondary : SecondaryScreenArgument("textSecondary")
+        data object TextOptionalTertiary : SecondaryScreenArgument("textTertiary")
     }
 }
 

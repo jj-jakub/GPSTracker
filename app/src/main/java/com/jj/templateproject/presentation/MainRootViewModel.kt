@@ -5,6 +5,7 @@ import com.jj.templateproject.data.ad.GetMainAdUnitId
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 
+@Suppress("EmptyMethod")
 class MainRootViewModel(
     getMainAdUnitId: GetMainAdUnitId,
 ) : ViewModel() {

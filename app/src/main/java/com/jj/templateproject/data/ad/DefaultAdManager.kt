@@ -53,6 +53,7 @@ class DefaultAdManager(
         }
     }
 
+    @Suppress("FoldInitializerAndIfToElvis")
     override fun showInterstitialAd() {
         actionsBeforeAdCounter = 0
         val interstitialAd = mainInterstitialAd
