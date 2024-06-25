@@ -19,15 +19,13 @@ class DefaultFirebaseMessagingService : FirebaseMessagingService() {
                 if (!task.isSuccessful) {
                     return@OnCompleteListener
                 }
-                val token = task.result
-                Log.d("ABAB", "token: $token")
             }
         )
     }
 
+    @Suppress("RedundantOverride")
     override fun onNewToken(token: String) {
         super.onNewToken(token)
-        Log.d("ABAB", "token: $token")
         // TODO
     }
 
