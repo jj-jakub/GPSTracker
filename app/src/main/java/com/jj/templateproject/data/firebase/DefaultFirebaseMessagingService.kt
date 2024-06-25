@@ -1,7 +1,6 @@
 package com.jj.templateproject.data.firebase
 
 import android.content.Intent
-import android.util.Log
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.messaging.FirebaseMessagingService
