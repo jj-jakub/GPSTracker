@@ -62,6 +62,6 @@ val mainModule = module {
     single { ActivityProvider(application = androidApplication()) }
     single { GetMainAdUnitId() }
     single { GetInterstitialAdUnitId() }
-    single<AppInfoRepository> { DefaultAppInfoRepository(context = androidContext()) }
+    single<AppInfoRepository> { DefaultAppInfoRepository() }
     single { GetIsInstalledFromValidSource(appInfoRepository = get()) }
 }
