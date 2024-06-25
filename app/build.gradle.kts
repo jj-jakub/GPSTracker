@@ -146,7 +146,6 @@ dependencies {
     implementation(project(":domain"))
     implementation(project(":design"))
     implementation(project(":networking"))
-    implementation(project(":lvl_library"))
 
     implementation(libs.kotlinStdlib)
     implementation(libs.koin)
