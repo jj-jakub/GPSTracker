@@ -10,7 +10,7 @@ import com.jj.templateproject.presentation.ui.main.MainScreen
 import com.jj.templateproject.presentation.ui.main.MainScreenViewModel
 import com.jj.templateproject.presentation.ui.secondary.SecondaryScreen
 import com.jj.templateproject.presentation.ui.secondary.SecondaryScreenViewModel
-import org.koin.androidx.compose.getViewModel
+import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun MainNavGraph(
@@ -24,7 +24,7 @@ fun MainNavGraph(
         composable(
             route = Route.MainScreen.route,
         ) {
-            val viewModel: MainScreenViewModel = getViewModel()
+            val viewModel: MainScreenViewModel = koinViewModel()
             MainScreen(
                 navController = navController,
                 viewModel = viewModel,
@@ -33,7 +33,7 @@ fun MainNavGraph(
         composable(
             route = Route.SecondaryScreen.route,
         ) {
-            val viewModel: SecondaryScreenViewModel = getViewModel()
+            val viewModel: SecondaryScreenViewModel = koinViewModel()
             SecondaryScreen(
                 viewModel = viewModel,
             )

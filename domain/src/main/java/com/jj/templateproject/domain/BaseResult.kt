@@ -1,6 +1,6 @@
 package com.jj.templateproject.domain
 
-sealed class BaseResult<out T : Any> {
-    data class Success<out T : Any>(val data: T) : BaseResult<T>()
-    data class Error(val exception: Exception) : BaseResult<Nothing>()
+sealed interface BaseResult<out Data, out Err : BaseError> {
+    data class Success<out Data, out Err : BaseError>(val data: Data) : BaseResult<Data, Err>
+    data class Error<out Data, out Err : BaseError>(val error: Err) : BaseResult<Data, Err>
 }
