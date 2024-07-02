@@ -50,7 +50,7 @@ class MainScreenViewModel(
     private fun fetchGoogleData() {
         viewModelScope.launch {
             val status = when (val result = getGoogleStatusUseCase.invoke()) {
-                is BaseResult.Error -> result.exception.message ?: "Failure"
+                is BaseResult.Error -> result.error.message
                 is BaseResult.Success -> "Ok"
             }
 
