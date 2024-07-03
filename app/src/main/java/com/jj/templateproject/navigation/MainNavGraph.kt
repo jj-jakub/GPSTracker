@@ -18,21 +18,17 @@ fun MainNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Route.MainScreen.route,
-        route = GraphNavigation.MainNavGraph.route,
+        startDestination = Route.MainScreen,
+        route = GraphNavigation.MainNavGraph::class,
     ) {
-        composable(
-            route = Route.MainScreen.route,
-        ) {
+        composable<Route.MainScreen> {
             val viewModel: MainScreenViewModel = koinViewModel()
             MainScreen(
                 navController = navController,
                 viewModel = viewModel,
             )
         }
-        composable(
-            route = Route.SecondaryScreen.route,
-        ) {
+        composable<Route.SecondaryScreen> {
             val viewModel: SecondaryScreenViewModel = koinViewModel()
             SecondaryScreen(
                 viewModel = viewModel,

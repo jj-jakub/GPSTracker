@@ -10,7 +10,7 @@ navigationKtx = "2.7.7"
 accompanistPermissions = "0.34.0"
 composeUi = "1.6.8"
 composeMaterial3 = "1.2.1"
-composeNavigation = "2.7.7"
+composeNavigation = "2.8.0-beta04"
 composeActivity = "1.9.0"
 composeKoin = "3.5.6"
 firebaseBom = "33.1.1"
@@ -21,6 +21,8 @@ retrofit = "2.11.0"
 retrofitCoroutines = "0.9.2"
 retrofitConverter = "2.11.0"
 okhttpInterceptor = "4.12.0"
+
+kotlinxSerialization = "1.6.3"
 
 junit5 = "5.10.2"
 mockk = "1.13.11"
@@ -68,10 +70,11 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 retrofitCoroutines = { module = "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter", version.ref = "retrofitCoroutines" }
 retrofitConverter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofitConverter" }
 okhttpInterceptor = { module = "com.squareup.okhttp3:logging-interceptor", version.ref = "okhttpInterceptor" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
-
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
