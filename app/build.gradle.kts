@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
     alias(libs.plugins.composeCompiler)
+    alias(libs.plugins.kotlinSerialization)
     id("kotlin-kapt")
     id("org.sonarqube") version "4.2.1.3168"
 }
@@ -170,6 +171,8 @@ dependencies {
     implementation(libs.composePreview)
     implementation(libs.composeActivity)
     implementation(libs.accompanistSystemUiController)
+
+    implementation(libs.kotlinx.serialization.json)
 
     testImplementation(libs.junit5)
     testImplementation(libs.mockk)
