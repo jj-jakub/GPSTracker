@@ -131,6 +131,7 @@ android {
         jvmTarget = "17"
     }
     testOptions {
+        unitTests.isIncludeAndroidResources = true
         unitTests.all {
             it.useJUnitPlatform()
         }
@@ -174,14 +175,21 @@ dependencies {
 
     implementation(libs.kotlinx.serialization.json)
 
+    testImplementation(libs.junit4)
     testImplementation(libs.junit5)
     testImplementation(libs.mockk)
     testImplementation(libs.coroutinesTest)
+    testImplementation(libs.koinTest)
+    testImplementation(libs.koinTestJUnit5)
+    testImplementation(libs.androidxNavTesting)
+    testImplementation(libs.robolectric)
+    testImplementation(libs.ui.test.junit4.android)
+    testRuntimeOnly(libs.junitVintageEngine)
+
+    testImplementation(libs.kotlinx.serialization.json)
 
     androidTestImplementation(libs.mockkAndroid)
-    androidTestImplementation(libs.junitAndroid)
-    androidTestImplementation(libs.espressoAndroid)
-    androidTestImplementation(libs.androidTestRunner)
     androidTestImplementation(libs.androidTestRules)
     androidTestImplementation(libs.uiAutomator)
+    androidTestImplementation(libs.ui.test.junit4.android)
 }
