@@ -4,8 +4,8 @@ import android.Manifest
 import android.os.Build
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.jj.templateproject.core.data.google.GetGoogleDataUseCase
-import com.jj.templateproject.core.data.google.GetGoogleStatusUseCase
+import com.jj.templateproject.domain.google.GetGoogleDataUseCase
+import com.jj.templateproject.domain.google.GetGoogleStatusUseCase
 import com.jj.templateproject.data.app.GetIsInstalledFromValidSource
 import com.jj.templateproject.data.config.VersionTextProvider
 import com.jj.templateproject.domain.BaseResult

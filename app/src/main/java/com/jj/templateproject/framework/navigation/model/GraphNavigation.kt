@@ -1,4 +1,4 @@
-package com.jj.templateproject.navigation.model
+package com.jj.templateproject.framework.navigation.model
 
 import kotlinx.serialization.Serializable
 

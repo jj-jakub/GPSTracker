@@ -2,8 +2,8 @@ package com.jj.templateproject.presentation.ui.secondary
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
-import com.jj.templateproject.navigation.model.Route
-import com.jj.templateproject.navigation.model.getArgument
+import com.jj.templateproject.framework.navigation.model.Route
+import com.jj.templateproject.framework.navigation.model.getArgument
 import com.jj.templateproject.presentation.ui.secondary.model.SecondaryScreenViewState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

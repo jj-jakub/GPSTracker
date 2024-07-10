@@ -1,6 +1,4 @@
-package com.jj.templateproject.core.data.google
-
-import com.jj.templateproject.domain.google.TemplateRepository
+package com.jj.templateproject.domain.google
 
 class GetGoogleDataUseCase(
     private val templateRepository: TemplateRepository,

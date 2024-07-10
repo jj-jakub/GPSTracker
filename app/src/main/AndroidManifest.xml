@@ -7,7 +7,7 @@
     <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
 
     <application
-        android:name=".presentation.TemplateProjectApplication"
+        android:name=".framework.TemplateProjectApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -16,7 +16,7 @@
         android:theme="@style/Theme.TemplateProject"
         android:usesCleartextTraffic="false">
         <activity
-            android:name=".presentation.activities.MainActivity"
+            android:name=".framework.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
