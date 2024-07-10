@@ -15,9 +15,9 @@ class KonsistTests {
     @Test
     fun `Validate architecture`() {
         Konsist.scopeFromProject().assertArchitecture {
-            val data = Layer("data", "com.jj.templateproject.data..")
-            val presentation = Layer("presentation", "com.jj.templateproject.presentation..")
-            val domain = Layer("domain", "com.jj.templateproject.domain..")
+            val data = Layer("data", "com.jj.gpstracker.data..")
+            val presentation = Layer("presentation", "com.jj.gpstracker.presentation..")
+            val domain = Layer("domain", "com.jj.gpstracker.domain..")
 
             domain.dependsOnNothing()
             data.dependsOn(domain)
@@ -30,7 +30,7 @@ class KonsistTests {
         Konsist.scopeFromProject().classes()
             .withNameEndingWith("UseCase")
             .assertTrue {
-                it.resideInPackage("com.jj.templateproject.domain..")
+                it.resideInPackage("com.jj.gpstracker.domain..")
             }
     }
 

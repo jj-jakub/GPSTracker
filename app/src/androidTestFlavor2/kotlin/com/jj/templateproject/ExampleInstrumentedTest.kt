@@ -1,4 +1,4 @@
-package com.jj.templateproject
+package com.jj.gpstracker
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.jj.templateproject.fl2.debug", appContext.packageName)
+        assertEquals("com.jj.gpstracker.fl2.debug", appContext.packageName)
     }
 }
