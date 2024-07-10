@@ -1,8 +1,8 @@
-# TemplateProject
+# GPSTracker
 
 ## Overview
 
-TemplateProject is an Android template providing a solid foundation for building apps. It includes necessary dependencies, a well-structured architecture, and a CI pipeline to streamline your development process.
+GPSTracker is an Android template providing a solid foundation for building apps. It includes necessary dependencies, a well-structured architecture, and a CI pipeline to streamline your development process.
 
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jj-jakub_TemplateProject&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jj-jakub_TemplateProject)
 

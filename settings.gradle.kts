@@ -1,4 +1,4 @@
-rootProject.name = "TemplateProject"
+rootProject.name = "GPSTracker"
 pluginManagement {
     repositories {
         google()

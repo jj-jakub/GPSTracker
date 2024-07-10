@@ -25,7 +25,7 @@ android {
         buildConfig = true
         compose = true
     }
-    namespace = "com.jj.templateproject.design"
+    namespace = "com.jj.gpstracker.design"
 }
 
 dependencies {

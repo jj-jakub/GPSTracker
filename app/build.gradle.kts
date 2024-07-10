@@ -39,7 +39,7 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.jj.templateproject"
+        applicationId = "com.jj.gpstracker"
         minSdk = 23
         targetSdk = 34
         versionCode = 1
@@ -59,7 +59,7 @@ android {
     signingConfigs {
         create("release") {
             val keystoreFile =
-                file(System.getProperty("user.home") + "/work/_temp/keystore/TemplateProject.jks")
+                file(System.getProperty("user.home") + "/work/_temp/keystore/GPSTracker.jks")
             storeFile = file(keystoreFile.path)
             storePassword = System.getenv("SIGNING_STORE_PASSWORD")
             keyAlias = System.getenv("SIGNING_KEY_ALIAS")
@@ -140,7 +140,7 @@ android {
         buildConfig = true
         compose = true
     }
-    namespace = "com.jj.templateproject"
+    namespace = "com.jj.gpstracker"
 }
 
 dependencies {

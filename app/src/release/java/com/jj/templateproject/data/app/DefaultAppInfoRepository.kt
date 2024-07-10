@@ -1,6 +1,6 @@
-package com.jj.templateproject.data.app
+package com.jj.gpstracker.data.app
 
-import com.jj.templateproject.domain.app.AppInfoRepository
+import com.jj.gpstracker.domain.app.AppInfoRepository
 
 class DefaultAppInfoRepository : AppInfoRepository {
     override suspend fun installedFromValidSource(): Boolean = true

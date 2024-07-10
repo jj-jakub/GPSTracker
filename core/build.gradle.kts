@@ -20,7 +20,7 @@ android {
             it.useJUnitPlatform()
         }
     }
-    namespace = "com.jj.templateproject.core"
+    namespace = "com.jj.gpstracker.core"
 }
 
 dependencies {
