@@ -187,6 +187,7 @@ dependencies {
     testRuntimeOnly(libs.junitVintageEngine)
 
     testImplementation(libs.kotlinx.serialization.json)
+    testImplementation(libs.konsist)
 
     androidTestImplementation(libs.mockkAndroid)
     androidTestImplementation(libs.androidTestRules)
