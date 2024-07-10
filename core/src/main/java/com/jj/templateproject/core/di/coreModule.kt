@@ -1,8 +1,8 @@
 package com.jj.templateproject.core.di
 
 import com.jj.templateproject.core.data.back4app.InitializeBack4App
-import com.jj.templateproject.core.data.google.GetGoogleDataUseCase
-import com.jj.templateproject.core.data.google.GetGoogleStatusUseCase
+import com.jj.templateproject.domain.google.GetGoogleDataUseCase
+import com.jj.templateproject.domain.google.GetGoogleStatusUseCase
 import com.jj.templateproject.core.data.notifications.AndroidNotificationManager
 import com.jj.templateproject.domain.notifications.NotificationManager
 import org.koin.android.ext.koin.androidContext

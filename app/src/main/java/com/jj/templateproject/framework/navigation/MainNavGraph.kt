@@ -1,11 +1,11 @@
-package com.jj.templateproject.navigation
+package com.jj.templateproject.framework.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.jj.templateproject.navigation.model.GraphNavigation
-import com.jj.templateproject.navigation.model.Route
+import com.jj.templateproject.framework.navigation.model.GraphNavigation
+import com.jj.templateproject.framework.navigation.model.Route
 import com.jj.templateproject.presentation.ui.main.MainScreen
 import com.jj.templateproject.presentation.ui.main.MainScreenViewModel
 import com.jj.templateproject.presentation.ui.secondary.SecondaryScreen

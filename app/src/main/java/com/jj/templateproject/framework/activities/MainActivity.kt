@@ -1,4 +1,4 @@
-package com.jj.templateproject.presentation.activities
+package com.jj.templateproject.framework.activities
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

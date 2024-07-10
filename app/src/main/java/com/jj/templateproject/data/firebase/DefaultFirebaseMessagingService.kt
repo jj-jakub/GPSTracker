@@ -5,7 +5,7 @@ import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.messaging.FirebaseMessaging
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.jj.templateproject.presentation.activities.MainActivity
+import com.jj.templateproject.framework.activities.MainActivity
 import org.koin.android.ext.android.inject
 
 class DefaultFirebaseMessagingService : FirebaseMessagingService() {

@@ -1,6 +1,6 @@
 package com.jj.templateproject.presentation.ui.main.model
 
-import com.jj.templateproject.navigation.model.Route
+import com.jj.templateproject.framework.navigation.model.Route
 
 sealed class MainScreenNavigation(val route: Route) {
     data class SecondaryScreen(

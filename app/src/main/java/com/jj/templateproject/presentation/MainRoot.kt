@@ -11,7 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import com.jj.templateproject.design.TemplateTheme
-import com.jj.templateproject.navigation.MainNavGraph
+import com.jj.templateproject.framework.navigation.MainNavGraph
 import com.jj.templateproject.presentation.ui.ads.ComposeAdView
 
 @Composable

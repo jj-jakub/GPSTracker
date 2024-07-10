@@ -1,4 +1,4 @@
-package com.jj.templateproject.presentation
+package com.jj.templateproject.framework
 
 import android.app.Application
 import com.jj.templateproject.core.data.back4app.InitializeBack4App

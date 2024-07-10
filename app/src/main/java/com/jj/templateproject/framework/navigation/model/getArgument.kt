@@ -1,4 +1,4 @@
-package com.jj.templateproject.navigation.model
+package com.jj.templateproject.framework.navigation.model
 
 import androidx.lifecycle.SavedStateHandle
 import kotlin.reflect.KProperty1
